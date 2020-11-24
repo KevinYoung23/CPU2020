@@ -1,0 +1,55 @@
+module decoder(
+    input [3:0] op,
+    input fetch,
+    input exec1,
+    input exec2,
+    input EQ,
+    input MI,
+    output extra,
+    output control_sig,
+    output 【10:0] control_port
+
+);
+
+assign LDA = ~op[3] & ~op[2] & ~op[1] & ~op[0];
+assign STA = ~op[3] & ~op[2] & ~op[1] & op[0];
+assign ADD = ~op[3] & ~op[2] & op[1]  & ~op[0];
+assign SUB = ~op[3] & ~op[2] & op[1]  & op[0];
+assign JMP = ~op[3] &  op[2] & ~op[1] & ~op[0];
+assign JMI = ~op[3] &  op[2] & ~op[1] & op[0];
+assign JEQ = ~op[3] &  op[2] & op[1]  & ~op[0];
+assign STP = ~op[3] &  op[2] & op[1]  & op[0];
+assign LDI = op[3]  & ~op[2] & ~op[1] & ~op[0];
+assign LSR = op[3]  & ~op[2] & ~op[1] & op[0];
+assign ASR = op[3]  & ~op[2] & op[1]  &~op[0];
+assign FIB = op[3]  & ~op[2] & op[1]  &op[0];
+
+//assign the extra bit
+assign extra = LDA & exec1 | ADD & exec1 | SUB & exec1 | FIB & exec1;
+//assign the control sig which controls the FIB instr.
+assign control_sig = 0;
+//RAM_data wren
+assign control_port[0] = STA & exec1 | FIB & exec2 & control_sig;
+//IR_enable
+assign control_port[1] = exec1;
+//PC_cnt_en
+assign control_port[2] = LDA & exec2 | STA & exec1 | ADD & exec2 | SUB & exec2 | JMI & ~MI & exec1 | JEQ & ~EQ & exec1 | LDI & exec1 | LSR & exec1 | FIB & exec2 & ~extra & ~control_sig;
+//PC_sload
+assign control_port[3] = JMP & exec1 | JMI & MI & exec1 | JEQ & EQ & exec1;
+//ALU_add_sub
+assign control_port[4] = ADD & exec1 | FIB & exec2 & control_sig;
+//ACC_enable
+assign control_port[5] = LDA & exec2 | ADD & exec2 | SUB & exec2 | LDI & exec1 | LSR & exec1;
+//ACC_shiftin
+assign control_port[6] = 0; //ASR & exec1
+//ACC_load
+assign control_port[7] = LDA & exec2 | ADD & exec2 | SUB & exec2 | LDI & exec1 | LSR & exec1;
+//MUX1 sel
+assign control_port[8] = LDA & exec1 | STA & exec1 | ADD & exec1 | SUB & exec1;
+//MUX2 sel
+assign control_port[9] = exec1;
+//MUX3 sel
+assign control_port[10] = LDA & exec2 | LDI & exec1;
+
+endmodule
+

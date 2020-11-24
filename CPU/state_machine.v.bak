@@ -1,0 +1,18 @@
+module state_machine(
+    input [2:0] cs,
+    input Extra,
+    input Control,
+    output [2:0] ns,
+    output fetch,
+    output exec1,
+    output exec2
+);
+
+assign ns[2] = 0;
+assign ns[1] = ~ns[2]&~ns[1]&ns[0]&Extra | ~ns[2]&ns[1]&~ns[0]&Control;
+assign ns[0] = ~ns[2]&~ns[1]&~ns[0];
+assign fetch = ~ns[2]&~ns[1]&~ns[0];
+assign exec1 = ~ns[2]&~ns[1]&ns[0];
+assign exec2 = ~ns[2]&ns[1]&~ns[0];
+
+endmodule 

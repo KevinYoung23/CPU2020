@@ -1,0 +1,12 @@
+Power Analyzer Status : Successful - Mon Aug 24 16:07:10 2020
+Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Revision Name : Kirin_A15Plus
+Top-level Entity Name : Kirin_A15Plus
+Family : Cyclone V
+Device : 5CGXFC7C7F23C8
+Power Models : Final
+Total Thermal Power Dissipation : 383.04 mW
+Core Dynamic Thermal Power Dissipation : 13.12 mW
+Core Static Thermal Power Dissipation : 349.79 mW
+I/O Thermal Power Dissipation : 20.14 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

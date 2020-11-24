@@ -1,0 +1,19 @@
+module fibonacci 
+(
+	input [15:0] n,
+	output [15:0] y
+);
+
+function [15:0] fib(input [15:0] n);
+    begin
+        if (n <= 1)
+            y = 1;
+        else
+            y = fib(n-1);
+            y = y+fib(n-2);
+    end
+endfunction
+
+assign y = fib(5)
+
+endmodule

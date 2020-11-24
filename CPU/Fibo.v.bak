@@ -1,0 +1,12 @@
+module Fibo(
+	input CLK,
+	input reset, 
+	input [11:0] operand,
+	input [11:0] number,
+	output reg ready,
+	output reg [11:0] address,
+);
+
+reg[15:0] num1, num2, temp;
+reg[11:0] counter, bsf;
+

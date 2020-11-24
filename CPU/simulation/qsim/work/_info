@@ -1,0 +1,334 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Onedrive - Personal/OneDrive - Imperial College London/Imperial college london-Kevi023XPS/Year_One/CPU2020/CPU2020/CPU/simulation/qsim
+v\Kirin-A15Plus 
+!s110 1595863778
+!i10b 1
+!s100 3o6JnL`zGL4OHZSdPY4[32
+IPC`V4AE=z=[7Jd9WfRPeV2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1595863777
+Z2 8Kirin-A15Plus.vo
+Z3 FKirin-A15Plus.vo
+Z4 L0 32
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1595863778.000000
+Z6 !s107 Kirin-A15Plus.vo|
+Z7 !s90 -work|work|Kirin-A15Plus.vo|
+!i113 1
+Z8 o-work work
+Z9 tCvgOpt 0
+n@134@kirin-@a15@plus@040
+vfib
+Z10 !s110 1596467448
+!i10b 1
+!s100 JEkGaZ@o8:`G0F3KfU>h13
+Ijj:0kULH1k2hY0L;o0T2V0
+R1
+R0
+w1596467447
+Z11 8Kirin_A15Plus.vo
+Z12 FKirin_A15Plus.vo
+R4
+R5
+r1
+!s85 0
+31
+Z13 !s108 1596467448.000000
+Z14 !s107 Kirin_A15Plus.vo|
+Z15 !s90 -work|work|Kirin_A15Plus.vo|
+!i113 1
+R8
+R9
+vfib_stack
+Z16 !s110 1596445974
+!i10b 1
+!s100 kCmdTONZ33GLXbede6j3^1
+IcDll4oiJ=aS:EZ4XPK=_00
+R1
+R0
+w1596445973
+R2
+R3
+R4
+R5
+r1
+!s85 0
+31
+Z17 !s108 1596445974.000000
+R6
+R7
+!i113 1
+R8
+R9
+vfib_stack_vlg_vec_tst
+R16
+!i10b 1
+!s100 H1KA@4UiK6Uzl5I_KFZT`3
+IROZ;FShf1elALII]zb`oH2
+R1
+R0
+w1596445972
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+Z18 L0 30
+R5
+r1
+!s85 0
+31
+R17
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R8
+R9
+vfib_vlg_vec_tst
+R10
+!i10b 1
+!s100 @eI^9Um_S6cXcEkY]DWiI1
+Ih0b`fCiVN4T93N?gPE2Zl3
+R1
+R0
+w1596467446
+8Waveform3.vwf.vt
+FWaveform3.vwf.vt
+R18
+R5
+r1
+!s85 0
+31
+R13
+!s107 Waveform3.vwf.vt|
+!s90 -work|work|Waveform3.vwf.vt|
+!i113 1
+R8
+R9
+vFibo
+Z19 !s110 1596522892
+!i10b 1
+!s100 o@M5JN]zXenzfU3co7k>:0
+IN3g7mOSXCmR[7SXC_<fB50
+R1
+R0
+w1596522891
+R11
+R12
+R4
+R5
+r1
+!s85 0
+31
+Z20 !s108 1596522892.000000
+R14
+R15
+!i113 1
+R8
+R9
+n@fibo
+vFibo_final
+!s110 1596546324
+!i10b 1
+!s100 =G<JXCUko<fQ@`BCcc]Q43
+INU4e9nkD1RzcJZ;n2@Qnh0
+R1
+R0
+w1596546323
+R11
+R12
+R4
+R5
+r1
+!s85 0
+31
+!s108 1596546324.000000
+R14
+R15
+!i113 1
+R8
+R9
+n@fibo_final
+vFibo_final_vlg_vec_tst
+!s110 1596546325
+!i10b 1
+!s100 0GdLKEgN8LGWWnK@=SGdG2
+Il^Oeh1Iod5@cX:VjLaY2l2
+R1
+R0
+w1596546322
+8Waveform6.vwf.vt
+FWaveform6.vwf.vt
+R18
+R5
+r1
+!s85 0
+31
+!s108 1596546325.000000
+!s107 Waveform6.vwf.vt|
+!s90 -work|work|Waveform6.vwf.vt|
+!i113 1
+R8
+R9
+n@fibo_final_vlg_vec_tst
+vFibo_vlg_vec_tst
+R19
+!i10b 1
+!s100 n;aY?mPUSJN95;oD_MS:Q3
+IhM1=MBeR?SjQha=ale<U>1
+R1
+R0
+w1596522890
+Z21 8Waveform5.vwf.vt
+Z22 FWaveform5.vwf.vt
+R18
+R5
+r1
+!s85 0
+31
+R20
+Z23 !s107 Waveform5.vwf.vt|
+Z24 !s90 -work|work|Waveform5.vwf.vt|
+!i113 1
+R8
+R9
+n@fibo_vlg_vec_tst
+vKirin_A15Plus
+Z25 !s110 1597737774
+!i10b 1
+!s100 :45kaC3MS16Y7S4:8GWi70
+I=d>g?ma5XokcXm[[@QJXK0
+R1
+R0
+w1597737772
+R11
+R12
+R4
+R5
+r1
+!s85 0
+31
+Z26 !s108 1597737774.000000
+R14
+R15
+!i113 1
+R8
+R9
+n@kirin_@a15@plus
+vKirin_A15Plus_vlg_vec_tst
+R25
+!i10b 1
+!s100 Od8GMkLQEi^3l^OAdK]e<3
+Ia@c8o3O1UM<bhEhmG@FfG2
+R1
+R0
+w1597737770
+8Waveform10.vwf.vt
+FWaveform10.vwf.vt
+R18
+R5
+r1
+!s85 0
+31
+R26
+!s107 Waveform10.vwf.vt|
+!s90 -work|work|Waveform10.vwf.vt|
+!i113 1
+R8
+R9
+n@kirin_@a15@plus_vlg_vec_tst
+vLCG
+Z27 !s110 1596724961
+!i10b 1
+!s100 P]ek@5CZof;oYD3:cc40W3
+I@0cQOg`cO5Gnog9[QlQz72
+R1
+R0
+w1596724960
+R11
+R12
+R4
+R5
+r1
+!s85 0
+31
+Z28 !s108 1596724961.000000
+R14
+R15
+!i113 1
+R8
+R9
+n@l@c@g
+vLCG_vlg_vec_tst
+R27
+!i10b 1
+!s100 0G3BE67;X6VSO9kMm6Y8c1
+IQ`O8Q[AAbZQY?gj]W6<f[2
+R1
+R0
+w1596724958
+8Waveform7.vwf.vt
+FWaveform7.vwf.vt
+R18
+R5
+r1
+!s85 0
+31
+R28
+!s107 Waveform7.vwf.vt|
+!s90 -work|work|Waveform7.vwf.vt|
+!i113 1
+R8
+R9
+n@l@c@g_vlg_vec_tst
+vtrial
+Z29 !s110 1596529394
+!i10b 1
+!s100 dhg^Pea?PPP5`>5UcmGeV3
+IdG0mh6j?]an;0[>U5SgLe0
+R1
+R0
+w1596529393
+R11
+R12
+R4
+R5
+r1
+!s85 0
+31
+Z30 !s108 1596529394.000000
+R14
+R15
+!i113 1
+R8
+R9
+vtrial_vlg_vec_tst
+R29
+!i10b 1
+!s100 XU_06:0P7Bl0C:e_^n99`0
+IMJH`P^BRAaQ6`4NIVgU_11
+R1
+R0
+w1596529392
+R21
+R22
+R18
+R5
+r1
+!s85 0
+31
+R30
+R23
+R24
+!i113 1
+R8
+R9

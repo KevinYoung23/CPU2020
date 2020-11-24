@@ -1,0 +1,7 @@
+
+State Machine - |Kirin_A15Plus|Fibo_final:inst8|Fibo:inst|stage
+Name stage.11 stage.10 stage.01 stage.00 
+stage.00 0 0 0 0 
+stage.01 0 0 1 1 
+stage.10 0 1 0 1 
+stage.11 1 0 0 1 

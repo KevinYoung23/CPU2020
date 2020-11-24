@@ -1,0 +1,7 @@
+module LKL(
+	input [15:0] data,
+	input LKL_sig,
+	output reg [11:0] address, 
+	output reg LKL_ready,
+	output reg count_en
+);

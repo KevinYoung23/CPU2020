@@ -1,0 +1,5 @@
+module dec_one(
+	input [15:0] n,
+	output [15:0] out
+);
+

@@ -1,0 +1,97 @@
+module LCG(
+    input CLK,
+    input LCG_sig,
+    output reg [15:0] sum,
+    output reg [15:0] random
+);
+
+localparam [15:0] x0 = 15'b000000000000000;
+localparam [15:0] a = 73;
+localparam [15:0] b = 3;
+localparam [15:0] pow = power(a,15'b000000000010000);
+
+reg [15:0] tmpN;
+reg [15:0] tmpS;
+
+intial 
+begin
+    tmpN <= 15'b000000000000000;
+    tmpS <= 15'b000000000000000;
+end
+
+//multiplication function
+function [15:0] multiply;
+input [15:0] a,b;
+reg [15:0] tmp;
+integer i;
+
+begin
+    tmp <= a;
+    for(i = 1; i < b; i++)
+    begin
+        tmp <= tmp + a;
+    end
+    multiply <= tmp;
+end
+
+endfunction
+
+//power function
+function [15:0] power;
+input [15:0] a,b;
+reg [15:0] tmp;
+integer i;
+
+begin
+    tmp <= a;
+    for(i = 1; i < b; i++)
+    begin
+        tmp <= multiply(tmp, a);
+    end
+    power <= tmp;
+end
+
+endfunction
+
+//mod function
+function [15:0] mod;
+input [15:0] a,b;
+reg [15:0] tmp;
+integer i;
+
+begin
+    tmp <= a - b;
+    while (tmp >= y) 
+    begin
+        tmp <= tmp - b;
+    end
+    if (tmp < b & tmp < 15'b000000000000000) 
+    begin
+        mod <= a;
+    end
+    if (tmp < y)
+    begin
+        mod <= tmp;
+    end
+end
+    
+endfunction
+
+//Start
+always@(posedge CLK)
+begin
+    integer i;
+    for (i = 10; i > 0 ; i++) 
+    begin
+        tmpN <= multiplication(tmpN,a) + b;
+        tmpN <= mod(tmpN,pow);
+        tmpS <= tmpS + tmpN;
+    end
+
+    sum <= tmpS;
+    random <= tmpN;
+
+end
+
+endmodule
+

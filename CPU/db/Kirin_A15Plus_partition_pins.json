@@ -1,0 +1,205 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ACC_out[15]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC_out[14]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC_out[13]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC_out[12]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC_out[11]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC_out[10]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC_out[9]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC_out[8]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Fib[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Fib[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Fib[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Fib[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Fib[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Fib[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Fib[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Fib[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Fib[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Fib[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Fib[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Fib[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Fib[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Fib[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Fib[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Fib[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[15]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[14]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[13]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[12]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[11]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[10]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[9]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[8]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[7]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sum[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

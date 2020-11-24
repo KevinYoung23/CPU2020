@@ -1,0 +1,328 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD>
+<TITLE>Thermal Power Dissipation by Hierarchy</TITLE>
+
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="jquery-ui/1.10.2/css/smoothness/jquery-ui-1.10.2.custom.min.css">
+<link rel="stylesheet" type="text/css" href="jquery-layout/1.3.0.rc30.79/jquery.layout-1.3.0.rc30.79.css">
+<link rel="stylesheet" type="text/css" href="css/override.css">
+
+<script type="text/javascript" src="jquery/1.11.3/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="jquery-ui/1.10.2/js/jquery-ui-1.10.2.custom.min.js"></script>
+<script type="text/javascript" src="jquery-layout/1.3.0.rc30.79/jquery.layout-1.3.0.rc30.79.min.js"></script>
+
+
+</HEAD>
+
+<BODY>
+<TABLE>
+<thead><TR  bgcolor="#BFBFBF">
+<TH>Compilation Hierarchy Node</TH>
+<TH>Total Thermal Power by Hierarchy (1)</TH>
+<TH>Block Thermal Dynamic Power (1)</TH>
+<TH>Block Thermal Static Power (1)(2)</TH>
+<TH>Routing Thermal Dynamic Power (1)</TH>
+<TH>Full Hierarchy Name</TH>
+</TR>
+</thead><tbody><TR >
+<TD >|Kirin_A15Plus</TD>
+<TD >28.89 mW (17.87 mW)</TD>
+<TD >24.56 mW (15.36 mW)</TD>
+<TD >0.42 mW (0.42 mW)</TD>
+<TD >3.92 mW (2.10 mW)</TD>
+<TD >|Kirin_A15Plus</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;|lpm_shiftreg:ACC</TD>
+<TD >0.28 mW (0.28 mW)</TD>
+<TD >0.10 mW (0.10 mW)</TD>
+<TD >--</TD>
+<TD >0.18 mW (0.18 mW)</TD>
+<TD >|Kirin_A15Plus|lpm_shiftreg:ACC</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;|lpm_add_sub:ALU</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >--</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >|Kirin_A15Plus|lpm_add_sub:ALU</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|add_sub_i1b:auto_generated</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >--</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >|Kirin_A15Plus|lpm_add_sub:ALU|add_sub_i1b:auto_generated</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;|hard_block:auto_generated_inst</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >--</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >|Kirin_A15Plus|hard_block:auto_generated_inst</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;|decoder:inst</TD>
+<TD >0.02 mW (0.02 mW)</TD>
+<TD >0.01 mW (0.01 mW)</TD>
+<TD >--</TD>
+<TD >0.01 mW (0.01 mW)</TD>
+<TD >|Kirin_A15Plus|decoder:inst</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;|lpm_ff:inst1</TD>
+<TD >0.09 mW (0.09 mW)</TD>
+<TD >0.01 mW (0.01 mW)</TD>
+<TD >--</TD>
+<TD >0.07 mW (0.07 mW)</TD>
+<TD >|Kirin_A15Plus|lpm_ff:inst1</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;|Instruction:inst2</TD>
+<TD >3.87 mW (0.00 mW)</TD>
+<TD >3.87 mW (0.00 mW)</TD>
+<TD >--</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >|Kirin_A15Plus|Instruction:inst2</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram:altsyncram_component</TD>
+<TD >3.87 mW (0.00 mW)</TD>
+<TD >3.87 mW (0.00 mW)</TD>
+<TD >--</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >|Kirin_A15Plus|Instruction:inst2|altsyncram:altsyncram_component</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram_gro1:auto_generated</TD>
+<TD >3.87 mW (3.87 mW)</TD>
+<TD >3.87 mW (3.87 mW)</TD>
+<TD >--</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >|Kirin_A15Plus|Instruction:inst2|altsyncram:altsyncram_component|altsyncram_gro1:auto_generated</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;|busmux:inst3</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >--</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >|Kirin_A15Plus|busmux:inst3</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|lpm_mux:$00000</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >--</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >|Kirin_A15Plus|busmux:inst3|lpm_mux:$00000</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;|state_machine:inst4</TD>
+<TD >0.01 mW (0.01 mW)</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >--</TD>
+<TD >0.01 mW (0.01 mW)</TD>
+<TD >|Kirin_A15Plus|state_machine:inst4</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;|LKL:inst5</TD>
+<TD >0.16 mW (0.16 mW)</TD>
+<TD >0.10 mW (0.10 mW)</TD>
+<TD >--</TD>
+<TD >0.06 mW (0.06 mW)</TD>
+<TD >|Kirin_A15Plus|LKL:inst5</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;|busmux:inst6</TD>
+<TD >0.01 mW (0.00 mW)</TD>
+<TD >0.01 mW (0.00 mW)</TD>
+<TD >--</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >|Kirin_A15Plus|busmux:inst6</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|lpm_mux:$00000</TD>
+<TD >0.01 mW (0.00 mW)</TD>
+<TD >0.01 mW (0.00 mW)</TD>
+<TD >--</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >|Kirin_A15Plus|busmux:inst6|lpm_mux:$00000</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|mux_blc:auto_generated</TD>
+<TD >0.01 mW (0.01 mW)</TD>
+<TD >0.01 mW (0.01 mW)</TD>
+<TD >--</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >|Kirin_A15Plus|busmux:inst6|lpm_mux:$00000|mux_blc:auto_generated</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;|Fibo_final:inst8</TD>
+<TD >5.69 mW (0.00 mW)</TD>
+<TD >4.65 mW (0.00 mW)</TD>
+<TD >--</TD>
+<TD >1.04 mW (0.00 mW)</TD>
+<TD >|Kirin_A15Plus|Fibo_final:inst8</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Fibo:inst</TD>
+<TD >1.75 mW (1.75 mW)</TD>
+<TD >0.79 mW (0.79 mW)</TD>
+<TD >--</TD>
+<TD >0.97 mW (0.97 mW)</TD>
+<TD >|Kirin_A15Plus|Fibo_final:inst8|Fibo:inst</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Fib_Ram:inst2</TD>
+<TD >3.94 mW (0.00 mW)</TD>
+<TD >3.87 mW (0.00 mW)</TD>
+<TD >--</TD>
+<TD >0.07 mW (0.00 mW)</TD>
+<TD >|Kirin_A15Plus|Fibo_final:inst8|Fib_Ram:inst2</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram:altsyncram_component</TD>
+<TD >3.94 mW (0.00 mW)</TD>
+<TD >3.87 mW (0.00 mW)</TD>
+<TD >--</TD>
+<TD >0.07 mW (0.00 mW)</TD>
+<TD >|Kirin_A15Plus|Fibo_final:inst8|Fib_Ram:inst2|altsyncram:altsyncram_component</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|altsyncram_7gm1:auto_generated</TD>
+<TD >3.94 mW (3.94 mW)</TD>
+<TD >3.87 mW (3.87 mW)</TD>
+<TD >--</TD>
+<TD >0.07 mW (0.07 mW)</TD>
+<TD >|Kirin_A15Plus|Fibo_final:inst8|Fib_Ram:inst2|altsyncram:altsyncram_component|altsyncram_7gm1:auto_generated</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;|LCG:inst9</TD>
+<TD >0.61 mW (0.61 mW)</TD>
+<TD >0.30 mW (0.30 mW)</TD>
+<TD >--</TD>
+<TD >0.31 mW (0.31 mW)</TD>
+<TD >|Kirin_A15Plus|LCG:inst9</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;|EQ_MI:inst13</TD>
+<TD >0.01 mW (0.01 mW)</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >--</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >|Kirin_A15Plus|EQ_MI:inst13</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;|lpm_ff:IR</TD>
+<TD >0.15 mW (0.15 mW)</TD>
+<TD >0.05 mW (0.05 mW)</TD>
+<TD >--</TD>
+<TD >0.10 mW (0.10 mW)</TD>
+<TD >|Kirin_A15Plus|lpm_ff:IR</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;|busmux:MUX1</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >--</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >|Kirin_A15Plus|busmux:MUX1</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|lpm_mux:$00000</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >--</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >|Kirin_A15Plus|busmux:MUX1|lpm_mux:$00000</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;|busmux:MUX2</TD>
+<TD >0.03 mW (0.00 mW)</TD>
+<TD >0.03 mW (0.00 mW)</TD>
+<TD >--</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >|Kirin_A15Plus|busmux:MUX2</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|lpm_mux:$00000</TD>
+<TD >0.03 mW (0.00 mW)</TD>
+<TD >0.03 mW (0.00 mW)</TD>
+<TD >--</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >|Kirin_A15Plus|busmux:MUX2|lpm_mux:$00000</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|mux_flc:auto_generated</TD>
+<TD >0.03 mW (0.03 mW)</TD>
+<TD >0.03 mW (0.03 mW)</TD>
+<TD >--</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >|Kirin_A15Plus|busmux:MUX2|lpm_mux:$00000|mux_flc:auto_generated</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;|busmux:MUX3</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >--</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >|Kirin_A15Plus|busmux:MUX3</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|lpm_mux:$00000</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >--</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >|Kirin_A15Plus|busmux:MUX3|lpm_mux:$00000</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;|busmux:MUX4</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >--</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >|Kirin_A15Plus|busmux:MUX4</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|lpm_mux:$00000</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >--</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >|Kirin_A15Plus|busmux:MUX4|lpm_mux:$00000</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|mux_flc:auto_generated</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >--</TD>
+<TD >0.00 mW (0.00 mW)</TD>
+<TD >|Kirin_A15Plus|busmux:MUX4|lpm_mux:$00000|mux_flc:auto_generated</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;|lpm_counter:PC</TD>
+<TD >0.08 mW (0.00 mW)</TD>
+<TD >0.05 mW (0.00 mW)</TD>
+<TD >--</TD>
+<TD >0.03 mW (0.00 mW)</TD>
+<TD >|Kirin_A15Plus|lpm_counter:PC</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|cntr_0gh:auto_generated</TD>
+<TD >0.08 mW (0.08 mW)</TD>
+<TD >0.05 mW (0.05 mW)</TD>
+<TD >--</TD>
+<TD >0.03 mW (0.03 mW)</TD>
+<TD >|Kirin_A15Plus|lpm_counter:PC|cntr_0gh:auto_generated</TD>
+</TR>
+</tbody></TABLE>
+
+<noscript>JavaScript must be enabled to view the report.</noscript>
+</BODY>
+</HTML>

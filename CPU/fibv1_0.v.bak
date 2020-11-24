@@ -1,0 +1,78 @@
+module fibonacci(
+	input reset, //1 to reset
+	input CLK,
+	input [11:0] number,
+	//input [15:0] in,
+	output reg ready,
+	output reg [15:0] out
+);
+
+reg[15:0] num1, num2, temp;
+reg[11:0] counter;
+
+
+/*always@(posedge reset)
+begin 
+	num1 = 16'b0;
+	num2 = 16'b1;
+	temp = 16'b0;
+	counter = 12'b0;
+end*/
+
+always@(posedge CLK) 
+begin
+	if(reset)
+	begin 
+		num1 <= 16'b0;
+		num2 <= 16'b1;
+		temp <= 16'b0;
+		counter <= 12'b0;
+		ready <= 0;
+	end 
+	else 
+	begin 
+	if((counter == number))
+	begin
+		out <= num2;
+		ready <= 1;
+	end
+		
+	else
+	begin 
+		temp = num2; 
+		num2 = num1 + temp;
+		num1 = temp;
+		out <= num2;
+		ready <= 0;
+		counter <= counter + 1;
+	end
+	end
+	
+/*	default:	
+	temp <= num2; 
+	num2 <= num1 + temp;
+	num1 <= temp;
+	out <= num2;
+	if(counter == number)
+	begin 
+		ready <= 1;
+	end*/
+end
+
+/*function [15:0] fib (input[11:0] number)
+	integer i;
+	
+		reg [15:0] num1 = 16'b0;
+		reg [15:0] num2 16'b1;
+		reg [15:0] temp = 16'b0;
+		
+	for(i = number; i > 0; i = i - 1)
+	begin 
+		temp = num2;
+		num2 = num1 + num2;
+		num1 = temp;
+		fib = num2;
+	end
+endfunction*/
+
+endmodule 
